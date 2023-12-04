@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  font-family: Poppins;
+  background: black;
+}
+.score-board {
+  position: absolute;
+  top: -30%;
+  left: 1%;
+
+  padding: 0.5rem 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  user-select: none;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+#dead-modal {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  display: none;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 20%;
+  height: 30%;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+#dead-modal h3 {
+  font-size: 2.8rem;
+  line-height: 1;
+}
+#dead-modal p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#dead-modal button {
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #5368e4;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 100ms linear;
+  border-radius: 16px;
+}
+#dead-modal button:hover {
+  background-color: #3650e2;
+}
+#start-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#start-modal h1 {
+  font-size: 5rem;
+}
+#start-modal p {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+#start-modal button {
+  font-size: 1.3rem;
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  background-color: #5368e4;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 100ms linear;
+  border-radius: 16px;
+}
